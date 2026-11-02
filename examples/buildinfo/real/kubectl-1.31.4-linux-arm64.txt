@@ -1,0 +1,98 @@
+kubectl: go1.22.9
+	path	k8s.io/kubernetes/cmd/kubectl
+	mod	k8s.io/kubernetes	(devel)	
+	dep	github.com/MakeNowJust/heredoc	v1.0.0	
+	dep	github.com/beorn7/perks	v1.0.1	
+	dep	github.com/blang/semver/v4	v4.0.0	
+	dep	github.com/cespare/xxhash/v2	v2.3.0	
+	dep	github.com/chai2010/gettext-go	v1.0.2	
+	dep	github.com/davecgh/go-spew	v1.1.2-0.20180830191138-d8f796af33cc	
+	dep	github.com/daviddengcn/go-colortext	v1.0.0	
+	dep	github.com/distribution/reference	v0.5.0	
+	dep	github.com/emicklei/go-restful/v3	v3.11.0	
+	dep	github.com/exponent-io/jsonpath	v0.0.0-20151013193312-d6023ce2651d	
+	dep	github.com/fatih/camelcase	v1.0.0	
+	dep	github.com/fxamacker/cbor/v2	v2.7.0	
+	dep	github.com/go-errors/errors	v1.4.2	
+	dep	github.com/go-logr/logr	v1.4.2	
+	dep	github.com/go-openapi/jsonpointer	v0.19.6	
+	dep	github.com/go-openapi/jsonreference	v0.20.2	
+	dep	github.com/go-openapi/swag	v0.22.4	
+	dep	github.com/gogo/protobuf	v1.3.2	
+	dep	github.com/golang/protobuf	v1.5.4	
+	dep	github.com/google/btree	v1.0.1	
+	dep	github.com/google/gnostic-models	v0.6.8	
+	dep	github.com/google/go-cmp	v0.6.0	
+	dep	github.com/google/gofuzz	v1.2.0	
+	dep	github.com/google/shlex	v0.0.0-20191202100458-e7afc7fbc510	
+	dep	github.com/google/uuid	v1.6.0	
+	dep	github.com/gorilla/websocket	v1.5.0	
+	dep	github.com/gregjones/httpcache	v0.0.0-20180305231024-9cad4c3443a7	
+	dep	github.com/imdario/mergo	v0.3.6	
+	dep	github.com/jonboulle/clockwork	v0.2.2	
+	dep	github.com/josharian/intern	v1.0.0	
+	dep	github.com/json-iterator/go	v1.1.12	
+	dep	github.com/liggitt/tabwriter	v0.0.0-20181228230101-89fcab3d43de	
+	dep	github.com/lithammer/dedent	v1.1.0	
+	dep	github.com/mailru/easyjson	v0.7.7	
+	dep	github.com/mitchellh/go-wordwrap	v1.0.1	
+	dep	github.com/moby/spdystream	v0.4.0	
+	dep	github.com/moby/term	v0.5.0	
+	dep	github.com/modern-go/concurrent	v0.0.0-20180306012644-bacd9c7ef1dd	
+	dep	github.com/modern-go/reflect2	v1.0.2	
+	dep	github.com/monochromegane/go-gitignore	v0.0.0-20200626010858-205db1a8cc00	
+	dep	github.com/munnerz/goautoneg	v0.0.0-20191010083416-a7dc8b61c822	
+	dep	github.com/mxk/go-flowrate	v0.0.0-20140419014527-cca7078d478f	
+	dep	github.com/opencontainers/go-digest	v1.0.0	
+	dep	github.com/peterbourgon/diskv	v2.0.1+incompatible	
+	dep	github.com/pkg/errors	v0.9.1	
+	dep	github.com/prometheus/client_golang	v1.19.1	
+	dep	github.com/prometheus/client_model	v0.6.1	
+	dep	github.com/prometheus/common	v0.55.0	
+	dep	github.com/prometheus/procfs	v0.15.1	
+	dep	github.com/russross/blackfriday/v2	v2.1.0	
+	dep	github.com/spf13/cobra	v1.8.1	
+	dep	github.com/spf13/pflag	v1.0.5	
+	dep	github.com/x448/float16	v0.8.4	
+	dep	github.com/xlab/treeprint	v1.2.0	
+	dep	go.starlark.net	v0.0.0-20230525235612-a134d8f9ddca	
+	dep	golang.org/x/net	v0.26.0	
+	dep	golang.org/x/oauth2	v0.21.0	
+	dep	golang.org/x/sync	v0.7.0	
+	dep	golang.org/x/sys	v0.21.0	
+	dep	golang.org/x/term	v0.21.0	
+	dep	golang.org/x/text	v0.16.0	
+	dep	golang.org/x/time	v0.3.0	
+	dep	google.golang.org/protobuf	v1.34.2	
+	dep	gopkg.in/evanphx/json-patch.v4	v4.12.0	
+	dep	gopkg.in/inf.v0	v0.9.1	
+	dep	gopkg.in/yaml.v2	v2.4.0	
+	dep	gopkg.in/yaml.v3	v3.0.1	
+	dep	k8s.io/api	(devel)	
+	dep	k8s.io/apimachinery	(devel)	
+	dep	k8s.io/cli-runtime	(devel)	
+	dep	k8s.io/client-go	(devel)	
+	dep	k8s.io/component-base	(devel)	
+	dep	k8s.io/component-helpers	(devel)	
+	dep	k8s.io/klog/v2	v2.130.1	
+	dep	k8s.io/kube-openapi	v0.0.0-20240228011516-70dd3763d340	
+	dep	k8s.io/kubectl	(devel)	
+	dep	k8s.io/metrics	(devel)	
+	dep	k8s.io/utils	v0.0.0-20240711033017-18e509b52bc8	
+	dep	sigs.k8s.io/json	v0.0.0-20221116044647-bc3834ca7abd	
+	dep	sigs.k8s.io/kustomize/api	v0.17.2	
+	dep	sigs.k8s.io/kustomize/kustomize/v5	v5.4.2	
+	dep	sigs.k8s.io/kustomize/kyaml	v0.17.1	
+	dep	sigs.k8s.io/structured-merge-diff/v4	v4.4.1	
+	dep	sigs.k8s.io/yaml	v1.4.0	
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-tags=selinux,notest
+	build	-trimpath=true
+	build	CGO_ENABLED=0
+	build	GOARCH=arm64
+	build	GOOS=linux
+	build	vcs=git
+	build	vcs.revision=a78aa47129b8539636eb86a9d00e31b2720fe06b
+	build	vcs.time=2024-12-10T11:37:26Z
+	build	vcs.modified=false

@@ -1,0 +1,1 @@
+/home/user/x.wasm: could not read Go build info from /home/user/x.wasm: unrecognized file format

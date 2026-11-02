@@ -1,0 +1,6 @@
+panic: assignment to entry in nil map
+
+goroutine 1 [running]:
+main.main()
+	/home/user/app/p.go:2 +0x34
+exit status 2

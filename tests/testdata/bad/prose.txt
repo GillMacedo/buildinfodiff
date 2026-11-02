@@ -1,0 +1,1 @@
+The build finished. Upload the binary to the release page and tell the team.

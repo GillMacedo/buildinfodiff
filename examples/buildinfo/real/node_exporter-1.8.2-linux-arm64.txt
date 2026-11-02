@@ -1,0 +1,58 @@
+node_exporter: go1.22.5
+	path	github.com/prometheus/node_exporter
+	mod	github.com/prometheus/node_exporter	(devel)	
+	dep	github.com/alecthomas/kingpin/v2	v2.4.0	h1:f48lwail6p8zpO1bC4TxtqACaGqHYA22qkHjHpqDjYY=
+	dep	github.com/alecthomas/units	v0.0.0-20211218093645-b94a6e3cc137	h1:s6gZFSlWYmbqAuRjVTiNNhvNRfY2Wxp9nhfyel4rklc=
+	dep	github.com/beevik/ntp	v1.3.1	h1:Y/srlT8L1yQr58kyPWFPZIxRL8ttx2SRIpVYJqZIlAM=
+	dep	github.com/beorn7/perks	v1.0.1	h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
+	dep	github.com/cespare/xxhash/v2	v2.2.0	h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj44=
+	dep	github.com/coreos/go-systemd/v22	v22.5.0	h1:RrqgGjYQKalulkV8NGVIfkXQf6YYmOyiJKk8iXXhfZs=
+	dep	github.com/dennwc/btrfs	v0.0.0-20240418142341-0167142bde7a	h1:KfFsGLJFVdCXlySUkV2FmxNtmiztpJb6tV+XYBmmv8E=
+	dep	github.com/dennwc/ioctl	v1.0.0	h1:DsWAAjIxRqNcLn9x6mwfuf2pet3iB7aK90K4tF16rLg=
+	dep	github.com/ema/qdisc	v1.0.0	h1:EHLG08FVRbWLg8uRICa3xzC9Zm0m7HyMHfXobWFnXYg=
+	dep	github.com/go-kit/log	v0.2.1	h1:MRVx0/zhvdseW+Gza6N9rVzU/IVzaeE1SFI4raAhmBU=
+	dep	github.com/go-logfmt/logfmt	v0.5.1	h1:otpy5pqBCBZ1ng9RQ0dPu4PN7ba75Y/aA+UpowDyNVA=
+	dep	github.com/godbus/dbus/v5	v5.1.0	h1:4KLkAxT3aOY8Li4FRJe/KvhoNFFxo0m6fNuFUO8QJUk=
+	dep	github.com/hashicorp/go-envparse	v0.1.0	h1:bE++6bhIsNCPLvgDZkYqo3nA+/PFI51pkrHdmPSDFPY=
+	dep	github.com/hodgesds/perf-utils	v0.7.0	h1:7KlHGMuig4FRH5fNw68PV6xLmgTe7jKs9hgAcEAbioU=
+	dep	github.com/josharian/native	v1.1.0	h1:uuaP0hAbW7Y4l0ZRQ6C9zfb7Mg1mbFKry/xzDAfmtLA=
+	dep	github.com/jpillora/backoff	v1.0.0	h1:uvFg412JmmHBHw7iwprIxkPMI+sGQ4kzOWsMeHnm2EA=
+	dep	github.com/jsimonetti/rtnetlink	v1.4.1	h1:JfD4jthWBqZMEffc5RjgmlzpYttAVw1sdnmiNaPO3hE=
+	dep	github.com/mattn/go-xmlrpc	v0.0.3	h1:Y6WEMLEsqs3RviBrAa1/7qmbGB7DVD3brZIbqMbQdGY=
+	dep	github.com/mdlayher/ethtool	v0.1.0	h1:XAWHsmKhyPOo42qq/yTPb0eFBGUKKTR1rE0dVrWVQ0Y=
+	dep	github.com/mdlayher/genetlink	v1.3.2	h1:KdrNKe+CTu+IbZnm/GVUMXSqBBLqcGpRDa0xkQy56gw=
+	dep	github.com/mdlayher/netlink	v1.7.2	h1:/UtM3ofJap7Vl4QWCPDGXY8d3GIY2UGSDbK+QWmY8/g=
+	dep	github.com/mdlayher/socket	v0.4.1	h1:eM9y2/jlbs1M615oshPQOHZzj6R6wMT7bX5NPiQvn2U=
+	dep	github.com/mdlayher/wifi	v0.1.0	h1:y8wYRUXwok5CtUZOXT3egghYesX0O79E3ALl+SIDm9Q=
+	dep	github.com/mwitkow/go-conntrack	v0.0.0-20190716064945-2f068394615f	h1:KUppIJq7/+SVif2QVs3tOP0zanoHgBEVAwHxUSIzRqU=
+	dep	github.com/opencontainers/selinux	v1.11.0	h1:+5Zbo97w3Lbmb3PeqQtpmTkMwsW5nRI3YaLpt7tQ7oU=
+	dep	github.com/prometheus-community/go-runit	v0.1.0	h1:uTWEj/Fn2RoLdfg/etSqwzgYNOYPrARx1BHUN052tGA=
+	dep	github.com/prometheus/client_golang	v1.19.0	h1:ygXvpU1AoN1MhdzckN+PyD9QJOSD4x7kmXYlnfbA6JU=
+	dep	github.com/prometheus/client_model	v0.6.1	h1:ZKSh/rekM+n3CeS952MLRAdFwIKqeY8b62p8ais2e9E=
+	dep	github.com/prometheus/common	v0.53.0	h1:U2pL9w9nmJwJDa4qqLQ3ZaePJ6ZTwt7cMD3AG3+aLCE=
+	dep	github.com/prometheus/exporter-toolkit	v0.11.0	h1:yNTsuZ0aNCNFQ3aFTD2uhPOvr4iD7fdBvKPAEGkNf+g=
+	dep	github.com/prometheus/procfs	v0.14.0	h1:Lw4VdGGoKEZilJsayHf0B+9YgLGREba2C6xr+Fdfq6s=
+	dep	github.com/safchain/ethtool	v0.3.0	h1:gimQJpsI6sc1yIqP/y8GYgiXn/NjgvpM0RNoWLVVmP0=
+	dep	github.com/xhit/go-str2duration/v2	v2.1.0	h1:lxklc02Drh6ynqX+DdPyp5pCKLUQpRT8bp8Ydu2Bstc=
+	dep	go.uber.org/atomic	v1.7.0	h1:ADUqmZGgLDDfbSL9ZmPxKTybcoEYHgpYfELNoN+7hsw=
+	dep	go.uber.org/multierr	v1.6.0	h1:y6IPFStTAIT5Ytl7/XYmHvzXQ7S3g/IeZW9hyZ5thw4=
+	dep	golang.org/x/crypto	v0.21.0	h1:X31++rzVUdKhX5sWmSOFZxx8UW/ldWx55cbf08iNAMA=
+	dep	golang.org/x/exp	v0.0.0-20240416160154-fe59bbe5cc7f	h1:99ci1mjWVBWwJiEKYY6jWa4d2nTQVIEhZIptnrVb1XY=
+	dep	golang.org/x/net	v0.23.0	h1:7EYJ93RZ9vYSZAIb2x3lnuvqO5zneoD6IvWjuhfxjTs=
+	dep	golang.org/x/oauth2	v0.18.0	h1:09qnuIAgzdx1XplqJvW6CQqMCtGZykZWcXzPMPUusvI=
+	dep	golang.org/x/sync	v0.7.0	h1:YsImfSBoP9QPYL0xyKJPq0gcaJdG3rInoqxTWbfQu9M=
+	dep	golang.org/x/sys	v0.19.0	h1:q5f1RH2jigJ1MoAWp2KTp3gm5zAGFUTarQZ5U386+4o=
+	dep	golang.org/x/text	v0.14.0	h1:ScX5w1eTa3QqT8oi6+ziP7dTV1S2+ALU0bI+0zXKWiQ=
+	dep	google.golang.org/protobuf	v1.33.0	h1:uNO2rsAINq/JlFpSdYEKIZ0uKD/R9cpdv0T+yoGwGmI=
+	dep	gopkg.in/yaml.v2	v2.4.0	h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
+	build	-buildmode=exe
+	build	-compiler=gc
+	build	-ldflags="-X github.com/prometheus/common/version.Version=1.8.2 -X github.com/prometheus/common/version.Revision=f1e0e8360aa60b6cb5e5cc1560bed348fc2c1895 -X github.com/prometheus/common/version.Branch=HEAD -X github.com/prometheus/common/version.BuildUser=root@03d440803209 -X github.com/prometheus/common/version.BuildDate=20240714-11:54:16  -extldflags '-static'"
+	build	DefaultGODEBUG=httplaxcontentlength=1,httpmuxgo121=1,tls10server=1,tlsrsakex=1,tlsunsafeekm=1
+	build	CGO_ENABLED=0
+	build	GOARCH=arm64
+	build	GOOS=linux
+	build	vcs=git
+	build	vcs.revision=f1e0e8360aa60b6cb5e5cc1560bed348fc2c1895
+	build	vcs.time=2024-07-14T11:52:11Z
+	build	vcs.modified=false

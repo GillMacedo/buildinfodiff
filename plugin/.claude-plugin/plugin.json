@@ -1,0 +1,13 @@
+{
+  "name": "buildinfodiff",
+  "version": "0.1.0",
+  "description": "Compare the build information in two Go binaries: dependency upgrades and downgrades, changed checksums, replace directives, Go toolchain, build tags, CGO, ldflags, DefaultGODEBUG, CPU level, and dirty or missing VCS stamps.",
+  "author": {
+    "name": "Giulliano Macedo",
+    "url": "https://github.com/GillMacedo"
+  },
+  "homepage": "https://github.com/GillMacedo/buildinfodiff",
+  "repository": "https://github.com/GillMacedo/buildinfodiff",
+  "license": "MIT",
+  "keywords": ["go", "golang", "release", "buildinfo", "dependencies", "supply-chain", "ci", "incident-response"]
+}

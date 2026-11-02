@@ -1,0 +1,37 @@
+[
+  {
+    "skills": ["comparing-go-release-binaries"],
+    "query": "What changed between ./dist/v1.4.1/orders and ./dist/v1.5.0/orders?",
+    "expected_behavior": [
+      "Runs buildinfodiff.go on the two binaries directly, with the older one as base",
+      "Leads with the findings that need a look and says what to check for each",
+      "Summarizes the toolchain and dependency changes and says the comparison doesn't cover code changes in the main module"
+    ]
+  },
+  {
+    "skills": ["comparing-go-release-binaries"],
+    "query": "Here is go version -m output for the binary in prod (prod.txt) and the hotfix (hotfix.txt). Is the hotfix safe to ship?",
+    "expected_behavior": [
+      "Runs buildinfodiff.go on the two text files without building or downloading anything",
+      "Explains uncommitted changes, local replace directives and downgrades if reported, and asks where the hotfix was built",
+      "Doesn't edit go.mod or rebuild unless asked"
+    ]
+  },
+  {
+    "skills": ["comparing-go-release-binaries"],
+    "query": "buildinfodiff exited with code 2 and said head may be cut off before its vcs lines. Can I just add --trust-no-vcs?",
+    "expected_behavior": [
+      "Explains that a cut-off file and a build without a VCS stamp look the same in text",
+      "Suggests checking the end of the file against a fresh go version -m, or passing the binary itself, and using --trust-no-vcs only if the build really used -buildvcs=false or was built outside the repository"
+    ]
+  },
+  {
+    "skills": ["comparing-go-release-binaries"],
+    "query": "Our service started rejecting some TLS clients after the last release, but nobody touched the TLS code. Can you compare the two binaries?",
+    "expected_behavior": [
+      "Compares the two binaries and looks for DefaultGODEBUG, Go toolchain and dependency changes",
+      "Names any tls-related GODEBUG keys that changed and points to the go line in go.mod as the usual cause",
+      "Doesn't claim a root cause the report doesn't show"
+    ]
+  }
+]

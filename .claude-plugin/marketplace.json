@@ -1,0 +1,14 @@
+{
+  "name": "buildinfodiff-marketplace",
+  "description": "Marketplace for buildinfodiff, which compares the build information in two Go binaries.",
+  "owner": {
+    "name": "Giulliano Macedo"
+  },
+  "plugins": [
+    {
+      "name": "buildinfodiff",
+      "source": "./plugin",
+      "description": "Compare two Go release binaries, so dirty builds, downgrades, local replace directives and changed build flags show up before deploy."
+    }
+  ]
+}
