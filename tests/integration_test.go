@@ -8,6 +8,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"testing"
 )
@@ -264,7 +265,14 @@ func TestRealBinaries(t *testing.T) {
 	v1 := p.build("amd64-v1", []string{"GOOS=linux", "GOARCH=amd64", "GOAMD64=v1"}, "-trimpath")
 	v3 := p.build("amd64-v3", []string{"GOOS=linux", "GOARCH=amd64", "GOAMD64=v3"}, "-trimpath")
 	expect(t, "GOAMD64", 1, []string{"GOAMD64 changed from v1 to v3"}, "--fail", v1, v3)
-	expect(t, "platform", 1, []string{"The platform differs"}, "--fail", rel2, v1)
+
+	// A platform that can't be the one running this test.
+	other := "arm64"
+	if runtime.GOARCH == "arm64" {
+		other = "amd64"
+	}
+	otherPlatform := p.build("other-platform", []string{"GOOS=linux", "GOARCH=" + other}, "-trimpath")
+	expect(t, "platform", 1, []string{"The platform differs"}, "--fail", rel2, otherPlatform)
 
 	// Uncommitted change.
 	p.edit("// not committed")
